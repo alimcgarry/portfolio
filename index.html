@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali McGarry Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
-        <ul class="navbar__nav">
+        <ul class="nav__list">
             <li class="nav-link"><a href="#">home</a></li>
             <li class="nav-link"><a href="#">about</a></li>
             <li class="nav-link"><a href="#">portfolio</a></li>
@@ -16,13 +19,13 @@
         </ul>
     </nav>
     
-    <header class="hero">
-        <span class="hero__greeting">Hey there! 👋🏻 I'm...</span>
-        <h1 class="hero__title">Ali McGarry</h1>
-        <p class="hero__subtitle">
-            I'm a developer who's passionate about creating applications and experiences on the web.
+    <header class="hero container">
+        <span class="greeting">Hey there! 👋🏻 I'm...</span>
+        <div><h1 class="title">Ali McGarry</h1></div>
+        <p class="subtitle">
+            I'm a developer who's passionate about creating interactive applications and experiences on the web.
         </p>
-        <button class="hero__btn">Hire Me</button>
+        <button class="btn">Hire Me</button>
     </header>
 
     <section class="about">
@@ -60,7 +63,7 @@
             </p>
             <button class="item__btn">View QR Code</button>
         </div>
-        
+
         <div class="portfolio__item">
             <img class="item__img" src="" alt="Image of QR code project">
             <h2 class="item__title">QR Code</h2>
@@ -86,6 +89,20 @@
             </p>
             <button class="item__btn">View QR Code</button>
         </div>
+    </section>
+
+    <section class="contact">
+        <h2 class="title">Get in Touch</h2>
+        <div class="title__line"></div>
+        <h3 class="subtitle">
+            Leave me a message below and I will get back to you as soon as possible!
+        </h3>
+
+        <form action="" class="contact__form">
+            <input type="name" />
+            <input type="email" />
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
     </section>
 </body>
 </html> 
