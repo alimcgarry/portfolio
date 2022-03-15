@@ -118,15 +118,41 @@
     <section class="contact">
         <h2 class="title">Get in Touch</h2>
         <div class="title__line"></div>
-        <h3 class="subtitle">
-            Leave me a message below and I will get back to you as soon as possible!
-        </h3>
 
-        <form action="" class="contact__form">
-            <input type="name" />
-            <input type="email" />
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-        </form>
+        <div class="grid-10-cols">
+
+            <div class="content">
+                <h4 class="subtitle">
+                 Leave me a message below and I will get back to you as soon as possible!
+                </h4>
+
+                <form action="" class="contact__form">
+                    <label>Name
+                        <input placeholder="Name" type="name" />
+                    </label>
+                    <label>Email
+                        <input placeholder="Email" type="email" />
+                    </label>
+                    <label>Message
+                        <textarea placeholder="Leave your message here..." name="" id="" cols="30" rows="10"></textarea>
+                    </label>
+                    <input value="Send Message" class="btn" type="submit">
+                </form>
+            </div>
+
+            <div class="personal-info">
+                <ul class="social__links">
+                    <li class="social__link"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li class="social__link"><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="social__link"><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+                </ul>
+                <span class="location">
+                    <i class="location__icon fa-solid fa-location-dot"></i>
+                    <p class="location__text">Thame, Oxfordshire</p>
+                </span>
+            </div>
+
+        </div>
     </section>
 </main>
 </body>

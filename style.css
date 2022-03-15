@@ -82,6 +82,10 @@ ul {
     list-style: none;
 }
 
+input {
+    display: block;
+}
+
 main {
     display: grid;
     row-gap: 8.8rem;
@@ -154,7 +158,9 @@ main {
 }
 
 .hero {
-    padding: 16.4rem 0;
+    height: calc(100vh - 12rem);
+    display: grid;
+    place-items: center ;
 }
 
 .hero .content {
@@ -226,8 +232,13 @@ main {
     flex-grow: none;
 }
 
+.portfolio .title {
+    margin-bottom: 2rem;
+}
+
 .portfolio .title__line {
     background-color: var(--accent-2);
+    margin-bottom: 6.4rem;
 }
 
 .portfolio__items {
@@ -295,6 +306,79 @@ main {
     left: 12%;
 }
 
+.contact .title {
+    margin-bottom: 2rem;
+}
+
+.contact .title__line {
+    background-color: var(--secondary-2);
+    margin-bottom: 2rem;
+}
+
+.contact .subtitle {
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+}
+
+.contact .content {
+    grid-column: 1 / 7;
+}
+
+.contact label {
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+}
+
+.contact input[type=name],
+.contact input[type=email],
+.contact textarea  {
+    width: 100%;
+    background-color: var(--grey-700);
+    border: none;
+    border-radius: 1rem;
+    padding: 1.2rem 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.contact ::placeholder {
+    font-weight: 500;
+    font-family: hind, sans-serif;
+    color: var(--grey-300);
+}
+
+.contact .personal-info {
+    grid-column: 7 / -1;
+    display: grid;
+    justify-content: flex-end ;
+    width: 100%;
+}
+
+.contact .social__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    justify-self: right;
+}
+
+.contact .social__link {
+    font-size: 2.8rem;
+}
+
+.contact .location {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.contact .location__icon {
+    font-size: 2.4rem;
+}
+
+.contact .location__text {
+    font-family: montserrat, sans-serif;
+}
 
 
 
