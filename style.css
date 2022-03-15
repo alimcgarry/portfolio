@@ -41,6 +41,11 @@ body {
     line-height: 1.6;
 }
 
+main {
+    display: grid;
+    row-gap: 6.4rem;
+}
+
 h1,
 h2,
 h3,
@@ -86,14 +91,16 @@ input {
     display: block;
 }
 
-main {
-    display: grid;
-    row-gap: 8.8rem;
-    margin-bottom: 8.8rem;
+.container {
+    display: inline-block;
+    max-width: 100rem;
 }
 
-.container {
-    width: 100rem;
+.container--red {
+    min-width: 88%;
+    max-width: 1000px;
+    height: 100px;
+    background-color: red;
 }
 
 .grid-10-cols {
@@ -140,7 +147,8 @@ main {
 }
 
 .navbar {
-    width: 128rem;
+    max-width: 128rem;
+    min-width: 88%;
     height: 12rem;
 
     display: flex;
@@ -378,6 +386,31 @@ main {
 
 .contact .location__text {
     font-family: montserrat, sans-serif;
+}
+
+@media screen and (max-width: 68.75em) {
+    h1 {
+        font-size: 8.2rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    .container {
+        max-width: 88%;
+        margin: 0 auto;
+    }
+
+    .portfolio .container,
+    .contact .container {
+        display: block;
+    }
+
+    .grid-10-cols {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
