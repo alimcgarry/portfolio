@@ -38,6 +38,7 @@ body {
     color: var(--grey-100);
     display: grid;
     place-items: center;
+    line-height: 1.6;
 }
 
 h1,
@@ -53,6 +54,7 @@ h6 {
 
 h1 {
     font-size: 9.6rem;
+    line-height: 1.2;
 }
 
 h2 {
@@ -60,7 +62,11 @@ h2 {
 }
 
 h3 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2rem;
 }
 
 p {
@@ -77,7 +83,7 @@ ul {
 }
 
 .container {
-    width: 108rem;
+    width: 100rem;
 }
 
 .grid-10-cols {
@@ -94,6 +100,13 @@ ul {
 
     font-family: montserrat, sans-serif;
     font-weight: 700;
+}
+
+.title__line {
+    width: 100%;
+    height: 0.4rem;
+    border-radius: 50px;
+    grid-column: 1 / -1;
 }
 
 .navbar {
@@ -119,7 +132,7 @@ ul {
 }
 
 .hero {
-    padding: 14.8rem 0;
+    padding: 16.4rem 0;
 }
 
 .hero .content {
@@ -152,11 +165,7 @@ ul {
 }
 
 .about .title__line  {
-    width: 100%;
-    height: 0.4rem;
     background-color:  var(--primary-2);
-    border-radius: 50px;
-    grid-column: 1 / -1;
 }
 
 .about .subtitle {
@@ -165,12 +174,38 @@ ul {
 
 .about .description {
     grid-column: 4 / -1;
+    padding-bottom: 3.2rem;
 }
 
 .about .io {
     grid-column: 1 / -1;
+    align-items: center;
     background-color: #473853;
+    border-radius: 50px;
+    padding: 4.8rem 0;
+}
+
+.about .io__logo {
+    position: relative;
+    right: 2rem;
+    width: 100%;
+    grid-column: 2/ 4;
     border-radius: 100px;
+}
+
+.about .io__content {
+    grid-column: 4 / 10;
+    align-content: center;
+}
+
+.about .io .btn {
+    background-color: var(--io-academy);
+    color: var(--grey-100);
+    flex-grow: none;
+}
+
+.portfolio .title__line {
+    background-color: var(--accent-2);
 }
 
 
