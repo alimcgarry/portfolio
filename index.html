@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali McGarry Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9b98b550ee.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -19,16 +19,23 @@
         </ul>
     </nav>
     
-    <header class="hero container">
-        <span class="greeting">Hey there! 👋🏻 I'm...</span>
-        <div><h1 class="title">Ali McGarry</h1></div>
-        <p class="subtitle">
-            I'm a developer who's passionate about creating interactive applications and experiences on the web.
-        </p>
-        <button class="btn">Hire Me</button>
+    <header class="hero">
+        <div class="container grid-10-cols">
+            <div class="content">
+                <span class="greeting">Hey there! 👋🏻 I'm...</span>
+                <div><h1 class="title">Ali McGarry</h1></div>
+                <p class="subtitle">
+                    I'm a developer who's passionate about creating interactive applications and experiences on the web.
+                </p>
+                <button class="btn">Hire Me
+                <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+    </div>
     </header>
 
     <section class="about">
+        <div class="container grid-10-cols">
         <h2 class="title">About Me</h2>
         <div class="title__line"></div>
         <h3 class="subtitle">
@@ -42,9 +49,13 @@
 
         <div class="io">
             <img class="io__logo" src="" alt="iO Academy Logo">
-            <h2 class="title">iO Academy</h2>
-            <button class="io__btn">View Prospectus</button>
+            <h3 class="title">iO Academy</h3>
+            <p class="description">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+            </p>
+            <button class="btn">View Prospectus</button>
         </div>
+    </div>
     </section>
 
     <section class="portfolio">
