@@ -9,7 +9,7 @@
     --grey-1100: #14051F;
     --primary-1: #ECD2FF;
     --primary-2: #DCB0FE;
-    --primary-3: #DCB0FE;
+    --primary-3: #D39AFF;
     --accent-1: #FAFFB1;
     --accent-2: #F7FF82;
     --accent-3: #E1E977;
@@ -129,19 +129,54 @@ input[type=submit] {
     font-family: montserrat, sans-serif;
     font-weight: 700;
     cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    outline: 2px solid var(--accent-2);
+    background: none;
+    color: var(--accent-2);
 }
 
 .btn--primary {
     background-color: var(--primary-2);
 }
 
+.btn--primary:hover {
+    outline: 2px solid var(--primary-2);
+    color: var(--primary-2);
+}
+
 .btn--secondary {
     background-color: var(--secondary-2);
+}
+
+.btn--secondary:hover {
+    outline: 2px solid var(--secondary-2);
+    color: var(--secondary-2);
 }
 
 .btn--accent {
     background-color: var(--accent-2);
 }
+
+.btn__accent:hover {
+    outline: 2px solid var(--accent-2);
+    color: var(--accent-2);
+}
+
+.fa-linkedin-in:hover {
+    color: var(--primary-2);
+}
+
+.fa-github:hover {
+    color: var(--accent-2);
+}
+
+.fa-envelope:hover {
+    color: var(--secondary-2);
+}
+
 
 .title__line {
     width: 100%;
@@ -254,6 +289,11 @@ input[type=submit] {
 .io .io__btn {
     background: var(--io-academy);
     color: var(--grey-100);
+}
+
+.io .io__btn:hover {
+    background: none;
+    outline: 3px solid var(--io-academy);
 }
 
 .portfolio .portfolio__line {
