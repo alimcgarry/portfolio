@@ -94,6 +94,19 @@ input {
     display: block;
 }
 
+input, select, textarea{
+    color: var(--grey-100);
+    font-family: hind, sans-serif   ;
+}
+
+textarea:focus, input:focus {
+    color: var(--grey-100);
+}
+
+input[type=submit] {
+    color: var(--grey-900);
+}
+
 .container {
     max-width: 88rem;
     width: 88%;
