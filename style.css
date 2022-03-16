@@ -166,6 +166,10 @@ input {
     align-content: center;
 }
 
+.hero .hero__content {
+    position: relative;
+}
+
 .hero .hero__greeting {
     font-size: 2rem;
     font-weight: 700;
@@ -179,10 +183,18 @@ input {
 }
 
 .hero .hero__subtitle {
-    max-width: 42rem;
+    max-width: 50rem;
     margin-bottom: 4.2rem;
 }
 
+.hero .hero__socials {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+
+    font-size: 2.4rem;
+}
 
 .about .about__line  {
     background-color:  var(--primary-2);
@@ -192,6 +204,10 @@ input {
     display: grid;
     grid-template-columns: 3fr 7fr;
     column-gap: 2rem;
+}
+
+.about .about__subtitle {
+    margin-bottom: 1.8rem;
 }
 
 .io .io__content {
@@ -252,7 +268,7 @@ input {
 }
 
 .portfolio .portfolio__item__content {
-    margin: 6.4rem 5.2rem;
+    padding: 6.4rem 5.2rem;
 }
 
 .portfolio .portfolio__technologies {
@@ -330,7 +346,7 @@ input {
 }
 
 .contact .contact__social-link {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
 }
 
 .contact .contact__location-icon {
@@ -339,6 +355,120 @@ input {
 
 .contact .contact__location-text {
     font-family: montserrat, sans-serif;
+}
+
+@media screen and (max-width: 920px) {
+    h1 {
+        font-size: 8.8rem;
+        line-height: 1.2;
+    }
+    
+    h2 {
+        font-size: 3.2rem;
+    }
+    
+    h3 {
+        font-size: 2.8rem;
+    }
+    
+    h4 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        line-height: 1.7;
+    }
+
+    body {
+        font-size: 1.6rem;
+    }  
+}
+
+@media screen and (max-width: 769px) {
+    h1 {
+        font-size: 6.8rem;
+    }
+
+    .hero .hero__socials {
+        display: none;
+    }
+
+    .about .about__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .io .io__content {
+        flex-direction: column;
+        text-align: center;
+        border-radius: 3rem;
+        gap: 2.4rem;
+        padding: 3.6rem 2.8rem;
+        margin: 0 auto;
+    }
+
+    .io .io__logo {
+        width: 14rem;
+    }
+    
+    .portfolio .portfolio__item__content {
+        padding: 3.6rem;
+    }
+
+    .contact .contact__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact .contact__personal-info {
+        margin-top: 4.2rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1.8rem;
+    }
+
+    .contact .contact__socials {
+        display: flex;
+        gap: 3.6rem;
+    }
+
+    .contact .contact__location-text {
+        font-size: 2rem;
+    }
+
+    .contact .contact__social-link {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .portfolio .portfolio__item {
+        grid-template-columns: 1fr;
+        row-gap: 0;
+        border-radius: 3rem;
+    }
+
+    .portfolio .portfolio__item__content {
+        text-align: center;
+        padding: 3.6rem 2.8rem;
+    }
+
+    .portfolio .portfolio__img {
+        height: 28rem;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .portfolio__img--reverse {
+    }
+}
+
+@media screen and (max-width: 472px) {
+    h1 {
+        font-size: 5.2rem;
+    }
+
+    .navbar .nav__list {
+        display: none;
+    }
 }
 
 
