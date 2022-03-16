@@ -41,6 +41,14 @@ body {
     line-height: 1.6;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 7.2rem;
+    margin-bottom: 7.2rem;
+    width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -87,9 +95,8 @@ input {
 }
 
 .container {
-    max-width: 100rem;
-    min-width: 88%;
-    width: 100%;
+    max-width: 88rem;
+    width: 88%;
     margin: 0 auto;
 }
 
@@ -125,11 +132,7 @@ input {
     width: 100%;
     height: 0.4rem;
     border-radius: 50px;
-    grid-column: 1 / -1;
-}
-
-.description {
-    padding-bottom: 3.2rem;
+    margin: 1.2rem 0 3.8rem 0 ;
 }
 
 .navbar {
@@ -138,7 +141,7 @@ input {
 
 .navbar {
     max-width: 128rem;
-    min-width: 88%;
+    width: 88%;
     height: 12rem;
 
     display: flex;
@@ -157,176 +160,147 @@ input {
 
 .hero {
     height: calc(100vh - 12rem);
+    width: 100%;
     display: grid;
     justify-items: left;
     align-content: center;
 }
 
-.hero .greeting {
+.hero .hero__greeting {
     font-size: 2rem;
     font-weight: 700;
 }
 
-.hero .title {
+.hero .hero__title {
     display: inline-block;
     background: linear-gradient(226.53deg, #F7FF82 10.97%, #BCDBEB 47.72%, #C291E8 86.03%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.hero .subtitle {
-    width: 85%;
+.hero .hero__subtitle {
+    max-width: 42rem;
     margin-bottom: 4.2rem;
 }
 
-.about .container {
-    row-gap: 2rem;
-}
 
-.about .title { 
-    grid-column: 1 / -1;
-}
-
-.about .title__line  {
+.about .about__line  {
     background-color:  var(--primary-2);
 }
 
-.about .subtitle {
-    grid-column: 1 / 4;
+.about .about__grid {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    column-gap: 2rem;
 }
 
-.about .description {
-    grid-column: 4 / -1;
-    padding-bottom: 3.2rem;
-}
-
-.about .io {
-    grid-column: 1 / -1;
-    align-items: center;
+.io .io__content {
     background-color: #473853;
     border-radius: 5rem;
-    padding: 4.8rem 0;
+    padding: 4.8rem 6.4rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.8rem;
 }
 
-.about .io__logo {
-    position: relative;
-    right: 2rem;
-    width: 100%;
-    grid-column: 2/ 4;
-    border-radius: 10rem;
+.io .io__logo {
+    width: 18rem;
+    border-radius: 100px;
 }
 
-.about .io__content {
-    grid-column: 4 / 10;
-    align-content: center;
+.io .io__description {
+    margin-bottom: 1.8em;
 }
 
-.about .io .btn {
-    background-color: var(--io-academy);
+.io .io__btn {
+    background: var(--io-academy);
     color: var(--grey-100);
-    flex-grow: none;
 }
 
-.portfolio .title {
-    margin-bottom: 2rem;
-}
-
-.portfolio .title__line {
+.portfolio .portfolio__line {
     background-color: var(--accent-2);
-    margin-bottom: 6.4rem;
 }
 
-.portfolio__items {
+.portfolio .portfolio__items {
     display: grid;
-    row-gap: 12.8rem;
+    grid-template-columns: 1fr;
+    row-gap: 7.2rem;
 }
 
-.portfolio__item {
+.portfolio .portfolio__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
     background-color: var(--grey-700);
     border-radius: 5rem;
     overflow: hidden;
 }
 
-.portfolio__item  .content {
-    padding: 8rem 0;
-}
-
-.portfolio__item .img {
-    grid-column: 6 / 11;
+.portfolio .portfolio__img {
     background-image: url(img/Project1.jpeg);
     background-position: center;
     width: 100%;
     height: 100%;
 }
 
-.portfolio__item .content {
+.portfolio .portfolio__img--reverse {
     grid-row: 1 / 2;
-    grid-column: 2 / 6
-}
-.portfolio__item .title {
-    margin-bottom: 0.8rem;
+    grid-column: 2 / 3;
 }
 
-.portfolio__item .tech__container {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.4rem;
+.portfolio .portfolio__item__content {
+    margin: 6.4rem 5.2rem;
 }
 
-.portfolio__item .tech {
+.portfolio .portfolio__technologies {
+    margin-bottom: 1.2rem;
+}
+
+.portfolio .portfolio__technology {
     padding: 0.8rem 1.6rem;
     border-radius: 3rem;
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--grey-900);
-    line-height: 1;
 }
 
-.portfolio__item .html {
+.portfolio__description {
+    padding-bottom: 3.2rem;
+}
+
+.portfolio .tech--1 {
     background-color: var(--primary-2);
     color: var(--grey-100);
 }
 
-.portfolio__item .css {
+.portfolio .tech--2 {
     background-color: var(--accent-2);
 }
 
-.portfolio__item--reverse .img {
-    grid-column: 1 / 6;
-}
-
-.portfolio__item--reverse .content {
-    grid-column: 6 / 10;
-    position: relative;
-    left: 12%;
-}
-
-.contact .title {
-    margin-bottom: 2rem;
-}
-
-.contact .title__line {
+.contact .contact__line {
     background-color: var(--secondary-2);
-    margin-bottom: 2rem;
 }
 
-.contact .subtitle {
+.contact .contact__grid {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    column-gap: 2rem;
+}
+
+.contact .contact__subtitle {
     font-weight: 600;
     margin-bottom: 2.4rem;
 }
 
-.contact .content {
-    grid-column: 1 / 7;
-}
-
-.contact label {
+.contact .contact__label {
     font-family: montserrat, sans-serif;
     font-weight: 700;
 }
 
-.contact input[type=name],
-.contact input[type=email],
-.contact textarea  {
+.contact .contact__input {
     width: 100%;
     background-color: var(--grey-700);
     border: none;
@@ -341,42 +315,32 @@ input {
     color: var(--grey-300);
 }
 
-.contact .personal-info {
-    grid-column: 7 / -1;
-    display: grid;
-    justify-content: flex-end ;
-    width: 100%;
-}
-
-.contact .social__links {
+.contact .contact__personal-info {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
-    justify-self: right;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
-.contact .social__link {
-    font-size: 2.8rem;
-}
-
-.contact .location {
+.contact .contact__location {
     display: flex;
-    align-self: flex-end;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 1.6rem;
 }
 
-.contact .location__icon {
+.contact .contact__social-link {
+    font-size: 2.8rem;
+}
+
+.contact .contact__location-icon {
     font-size: 2.4rem;
 }
 
-.contact .location__text {
+.contact .contact__location-text {
     font-family: montserrat, sans-serif;
 }
 
-@media screen and (max-width: 68.75em) {
-}
 
 
 

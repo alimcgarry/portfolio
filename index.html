@@ -10,147 +10,228 @@
     <script src="https://kit.fontawesome.com/9b98b550ee.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Start of Navbar -->
     <nav class="navbar">
+        <!-- Navbar links -->
         <ul class="nav__list">
             <li class="nav-link"><a href="#">home</a></li>
             <li class="nav-link"><a href="#">about</a></li>
             <li class="nav-link"><a href="#">portfolio</a></li>
             <li class="nav-link"><a href="#">contact</a></li>
         </ul>
+        <!-- End of navbar links -->
     </nav>
+    <!-- End of navbar -->
     
+
+    <!-- Start of hero section -->
     <header class="hero">
+        <!-- Container for Hero Section -->
         <div class="container">
-            <div class="content">
-                <span class="greeting">Hey there! 👋🏻 I'm...</span>
-                <div><h1 class="title">Ali McGarry</h1></div>
-                <p class="subtitle">
+            <!-- Hero Section Content -->
+            <div class="hero__content">
+                <span class="hero__greeting">Hey there! 👋🏻 I'm...</span>
+                <!-- Div for gradient title -->
+                <div>
+                    <h1 class="hero__title">Ali McGarry</h1>
+                </div>
+                <p class="hero__subtitle">
                     I'm a developer who's passionate about creating interactive applications and experiences on the web.
                 </p>
-                <button class="btn">Hire Me
-                <i class="fa-solid fa-arrow-right"></i>
+                <button class="hero__btn btn">
+                    Hire Me
+                    <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
+            <!-- End of hero section content -->
         </div>
+        <!-- End of container -->
     </header>
+    <!-- End of hero Section -->
 
+<main>
+    <!-- Start of about section -->
     <section class="about">
+        <!-- Container for about section -->
         <div class="container">
-        <h2 class="title">About Me</h2>
-        <div class="title__line"></div>
-        <h4 class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus viverra dictum.
-        </h4>
-        <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis, lorem vitae feugiat molestie, nisl ligula hendrerit risus, et malesuada eros sem ac arcu. Vestibulum pellentesque leo non condimentum viverra. Vivamus fringilla.<br/><br/>
+            <!-- About section content -->
+            <div class="about__content">
+                <!-- About section header -->
+                <h2 class="about__title">About Me</h2>
+                <div class="about__line title__line"></div>
+                <!-- End of about section header -->
+                <div class="about__grid">
+                    <h4 class="about__subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus viverra dictum.
+                    </h4>
+                    <p class="about__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis, lorem vitae feugiat molestie, nisl ligula hendrerit risus, et malesuada eros sem ac arcu. Vestibulum pellentesque leo non condimentum viverra. Vivamus fringilla.<br/><br/>
 
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
-        </p>
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                    </p>
+                </div>
+            </div>
+            <!-- End of about section content -->
+        </div>
+        <!-- End of container -->
+    </section>
+    <!-- End of about section -->
 
-        <div class="io grid">
-            <img class="io__logo" src="./img/iO Logo.png" alt="iO Academy Logo">
+    <!-- Start of iO section -->
+    <section class="io">
+        <!-- Container for iO section -->
+        <div class="container">
+            <!-- iO section content -->
             <div class="io__content">
-            <h3 class="title">iO Academy</h3>
-            <p class="description">
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
-            </p>
-            <button class="btn">View Prospectus</button>
+                <img class="io__logo" src="./img/iO Logo.png" alt="iO Academy Logo">
+                <div>
+                <h3 class="io__title">iO Academy</h3>
+                <p class="io__description">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                 </p>
+                <button class="io__btn btn">View Prospectus</button>
+            </div>
+            <!-- End of iO section content -->
         </div>
-        </div>
-    </div>
+        <!-- End of container -->
     </section>
+    <!-- End of iO Section -->
 
+    <!-- Start of portfolio section -->
     <section class="portfolio">
+        <!-- Container for portfolio section -->
         <div class="container">
-        <h2 class="title">Portfolio</h2>
-        <div class="title__line"></div>
+            <!-- Portfolio section content -->
+            <div class="portfolio__content">
+                <!-- Portfolio section header -->
+                <h2 class="portfolio__title">Portfolio</h2>
+                <div class="portfolio__line title__line"></div>
+                <!-- End of portfolio section header -->
 
-        <div class="portfolio__items">
-        <div class="portfolio__item grid">
-            <div class="img"></div>
-            <div class="content">
-                <h2 class="title">QR Code</h2>
-                <div class="tech__container">
-                    <span class="tech html">HTML</span>
-                    <span class="tech css">CSS</span>
-                </div>
-                <p class="description">
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
-                </p>
-                <button class="btn btn--primary">View QR Code</button>
-            </div>
-        </div>
+                    <!-- List of portfolio projects -->
+                    <ul class="portfolio__items">
 
-        <div class="portfolio__item grid-10-cols portfolio__item--reverse" >
-            <div class="img"></div>
-            <div class="content">
-                <h2 class="item__title">QR Code</h2>
-                <div class="tech__container">
-                    <span class="tech html">HTML</span>
-                    <span class="tech css">CSS</span>
-                </div>
-                <p class="description">
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
-                </p>
-                <button class="btn btn--accent">View QR Code</button>
-            </div>
-        </div>
+                        <!-- Project #1 -->
+                        <li class="portfolio__item">
+                            <div class="portfolio__img"></div>
 
-        <div class="portfolio__item">
-            <div class="img"></div>
-            <div class="content">
-                <h2 class="item__title">QR Code</h2>
-                <div class="tech__container">
-                    <span class="tech html">HTML</span>
-                    <span class="tech css">CSS</span>
-                </div>
-                <p class="description">
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
-                </p>
-                <button class="btn btn--secondary">View QR Code</button>
+                            <div class="portfolio__item__content">
+                                <h2 class="portfolio__item__title">QR Code</h2>
+                                <div class="portfolio__technologies">
+                                    <span class="portfolio__technology tech--1">HTML</span>
+                                    <span class="portfolio__technology tech--2">CSS</span>
+                                </div>
+                                <p class="portfolio__description">
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                                </p>
+                                <button class="btn btn--primary">View QR Code</button>
+                            </div>
+                        </li>
+                        <!-- End of project #1 -->
+
+                        <!-- Project #2 -->
+                        <li class="portfolio__item">
+                            <div class="portfolio__img portfolio__img--reverse"></div>
+
+                            <div class="portfolio__item__content">
+                                <h2 class="portfolio__item__title">QR Code</h2>
+                                <div class="portfolio__technologies">
+                                    <span class="portfolio__technology tech--1">HTML</span>
+                                    <span class="portfolio__technology tech--2">CSS</span>
+                                </div>
+                                <p class="portfolio__description">
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                                </p>
+                                <button class="btn btn--primary">View QR Code</button>
+                            </div>
+                        </li>
+                        <!-- End of project #2 -->
+
+                        <!-- Project #3 -->
+                        <li class="portfolio__item">
+                            <div class="portfolio__img"></div>
+
+                            <div class="portfolio__item__content">
+                                <h2 class="portfolio__item__title">QR Code</h2>
+                                <div class="portfolio__technologies">
+                                    <span class="portfolio__technology tech--1">HTML</span>
+                                    <span class="portfolio__technology tech--2">CSS</span>
+                                </div>
+                                <p class="portfolio__description">
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                                </p>
+                                <button class="btn btn--primary">View QR Code</button>
+                            </div>
+                        </li>
+                        <!-- End of project #3 -->
+
+                    </ul>
+                    <!-- End of portfolio projects list -->
             </div>
+            <!-- End of portfolio section content -->
         </div>
-    </div>
-    </div>
+        <!-- End of container -->
     </section>
+    <!-- End of portfolio section -->
 
+    <!-- Start of contact section -->
     <section class="contact">
+        <!-- Start of contact section container -->
         <div class="container">
-            <h2 class="title">Get in Touch</h2>
-            <div class="title__line"></div>
+            <!-- Start of contact section content -->
+            <div class="contact__content">
 
-            <div class="content">
-                <h4 class="subtitle">
-                 Leave me a message below and I will get back to you as soon as possible!
-                </h4>
-                <form action="" class="contact__form">
-                    <label>Name
-                        <input placeholder="Name" type="name" />
-                    </label>
-                    <label>Email
-                        <input placeholder="Email" type="email" />
-                    </label>
-                    <label>Message
-                        <textarea placeholder="Leave your message here..." name="" id="" cols="30" rows="10"></textarea>
-                    </label>
-                    <input value="Send Message" class="btn" type="submit">
-                </form>
-            </div>
+                <!-- Contact section header -->
+                <h2 class="contact__title">Get in Touch</h2>
+                <div class="contact__line title__line"></div>
+                <!-- End of contact section header -->
 
-            <div class="personal-info">
-                <ul class="social__links">
-                    <li class="social__link"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li class="social__link"><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                    <li class="social__link"><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
-                </ul>
-                <span class="location">
-                    <i class="location__icon fa-solid fa-location-dot"></i>
-                    <p class="location__text">Thame, Oxfordshire</p>
-                </span>
-            </div>
+                <!-- Start of contact section grid -->
+                <div class="contact__grid">
+
+                    <!-- Contact section form -->
+                    <div class="contact__form">
+                        <h4 class="contact__subtitle">
+                            Leave me a message below and I will get back to you as soon as possible!
+                           </h4>
+                           <form action="" class="contact__form">
+                               <label class="contact__label">Name
+                                   <input class="contact__input" placeholder="Name" type="name" />
+                               </label>
+                               <label class="contact__label">Email
+                                   <input class="contact__input" placeholder="Email" type="email" />
+                               </label>
+                               <label class="contact__label">Message
+                                   <textarea class="contact__input" placeholder="Leave your message here..." name="" id="" cols="30" rows="10"></textarea>
+                               </label>
+                               <input value="Send Message" class="btn" type="submit">
+                           </form>
+                    </div>
+                    <!-- End of contact section form -->
+
+                    <!-- Personal information -->
+                    <div class="contact__personal-info">
+                        <ul class="contact__socials">
+                            <li class="contact__social-link"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li class="contact__social-link"><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                            <li class="contact__social-link"><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+                        </ul>
+                        <span class="contact__location">
+                            <i class="contact__location-icon fa-solid fa-location-dot"></i>
+                            <p class="contact__location-text">Thame, Oxfordshire</p>
+                        </span>
+                     </div>
+                    <!-- End of personal information -->
+
+                </div>
+                <!-- End of contact section grid -->
+               </div>
+   
+            <!-- End of contact section content -->
         </div>
+        <!-- End of container -->
     </section>
-    
-
+    <!-- End of contact section -->
+</main>
 </body>
 </html> 
