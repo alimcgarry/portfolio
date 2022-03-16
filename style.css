@@ -184,11 +184,6 @@ input[type=submit] {
     border-radius: 50px;
     margin: 1.2rem 0 3.8rem 0 ;
 }
-
-.navbar {
-    height: 12rem;
-}
-
 .navbar {
     max-width: 128rem;
     width: 88%;
