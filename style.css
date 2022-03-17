@@ -18,7 +18,6 @@
     --secondary-3: #BCDBEB;
     --io-academy: #FF3366;
     --io-academy-dark: #D3415E;
-
 }
 
 * {
@@ -116,6 +115,10 @@ button:hover {
     margin: 0 auto;
 }
 
+body .navbar .hidden {
+    display: none;
+}
+
 .btn {
     padding: 1.4rem 2.8rem;
     border-radius: 100px;
@@ -193,13 +196,52 @@ button:hover {
     gap: 4.2rem;
 }
 
+.navbar .mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(20, 5, 31, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    
+}
+
+.navbar .mobile-nav .mobile__nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.navbar .mobile-nav .nav-link {
+    font-size: 2.2rem;
+}
+
 .navbar .nav-link {
     font-weight: bold;
     border-bottom: 2px solid transparent;
 }
 
-.navbar .nav-link:hover {
+.navbar .nav-link a:hover {
+    padding-bottom: 0.2rem;
     border-bottom: 2px solid var(--grey-100);
+}
+
+.navbar .hamburger {
+    display: none;
+    position: absolute;
+    top: 4.8rem;
+    right: 4.8rem;
+}
+
+.navbar .hamburger-open,
+.navbar .hamburger-close {
+    background: none;
+    border: none;
 }
 
 .hero {
@@ -256,7 +298,7 @@ button:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    border-radius: 5rem;
+    border-radius: 2rem;
     padding: 4.8rem 6.4rem;
     
     display: flex;
@@ -296,9 +338,8 @@ button:hover {
 
 .portfolio .portfolio__item {
     display: flex;
-    gap: 2rem;
     background-color: var(--grey-700);
-    border-radius: 5rem;
+    border-radius: 2rem;
     overflow: hidden;
 }
 
@@ -436,6 +477,10 @@ button:hover {
         font-size: 6.8rem;
     }
 
+    .navbar .hamburger {
+        display: block;
+    }
+
     .hero .hero__socials {
         display: none;
     }
@@ -484,6 +529,10 @@ button:hover {
     .contact .contact__social-link {
         font-size: 2.8rem;
     }
+
+    .navbar .nav__list {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 690px) {
@@ -513,9 +562,5 @@ button:hover {
 @media screen and (max-width: 472px) {
     h1 {
         font-size: 5.2rem;
-    }
-
-    .navbar .nav__list {
-        display: none;
     }
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9b98b550ee.js" crossorigin="anonymous"></script>
+    <script async src="script.js"></script>
 </head>
 <body>
     <!-- Start of Navbar -->
@@ -19,7 +20,21 @@
             <li class="nav-link"><a href="#portfolio">portfolio</a></li>
             <li class="nav-link"><a href="#contact">contact</a></li>
         </ul>
+
+        <div class="nav__hamburger">
+            <button class="hamburger hamburger-open"><img src="img/mobile-nav-open.svg"/></button>
+        </div>
         <!-- End of navbar links -->
+        <div class="mobile-nav hidden">
+            <ul class="mobile__nav__list">
+                <button class="hamburger hamburger-close"><img src="img/mobile-nav-close.svg"/></button>
+                <li class="nav-link"><a href="#">home</a></li>
+                <li class="nav-link"><a href="#about">about</a></li>
+                <li class="nav-link"><a href="#portfolio">portfolio</a></li>
+                <li class="nav-link"><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+        <!-- Start of mobile nav -->
     </nav>
     <!-- End of navbar -->
     
