@@ -16,7 +16,6 @@
     --secondary-1: #E0F5FF;
     --secondary-2: #D1EFFE;
     --secondary-3: #BCDBEB;
-    --gradient: ;
     --io-academy: #FF3366;
 
 }
@@ -37,8 +36,6 @@ body {
     font-family: hilde, sans-serif;
     font-size: 1.8rem;
     color: var(--grey-100);
-    display: grid;
-    place-items: center;
     line-height: 1.6;
 }
 
@@ -114,18 +111,10 @@ input[type=submit] {
     margin: 0 auto;
 }
 
-.grid-10-cols {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    column-gap: 2rem;
-}
-
 .btn {
     background-color: var(--accent-2);
-    border: none;
     padding: 1.4rem 2.8rem;
     border-radius: 100px;
-
     font-family: montserrat, sans-serif;
     font-weight: 700;
     cursor: pointer;
@@ -189,7 +178,7 @@ input[type=submit] {
     max-width: 128rem;
     width: 88%;
     height: 12rem;
-
+    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -211,9 +200,7 @@ input[type=submit] {
 
 .hero {
     height: calc(100vh - 12rem);
-    width: 100%;
     display: grid;
-    justify-items: left;
     align-content: center;
 }
 
@@ -241,10 +228,8 @@ input[type=submit] {
 
 .hero .hero__socials {
     position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-100%, -100%);
-
+    top: 16%;
+    left: 96%;
     font-size: 2.4rem;
 }
 
@@ -272,7 +257,6 @@ input[type=submit] {
     
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 4.8rem;
 }
 
@@ -319,7 +303,6 @@ input[type=submit] {
     background-position: center;
     background-size: cover;
     width: 50%;
-    height: 100%;
 }
 
 .portfolio .portfolio__item--reverse {
@@ -532,22 +515,3 @@ input[type=submit] {
         display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
