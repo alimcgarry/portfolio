@@ -17,6 +17,7 @@
     --secondary-2: #D1EFFE;
     --secondary-3: #BCDBEB;
     --io-academy: #FF3366;
+    --io-academy-dark: #D3415E;
 
 }
 
@@ -105,6 +106,10 @@ input[type=submit] {
     color: var(--grey-900);
 }
 
+button:hover {
+    transition: all 300ms ease-in;
+}
+
 .container {
     max-width: 88rem;
     width: 88%;
@@ -112,7 +117,6 @@ input[type=submit] {
 }
 
 .btn {
-    background-color: var(--accent-2);
     padding: 1.4rem 2.8rem;
     border-radius: 100px;
     font-family: montserrat, sans-serif;
@@ -270,14 +274,14 @@ input[type=submit] {
 }
 
 .io .io__btn {
-    background: var(--io-academy);
-    color: var(--grey-100);
-    outline: 2px solid var(--grey-100);
+    background: var(--grey-100);
+    color: var(--io-academy-dark);
 }
 
 .io .io__btn:hover {
     background: none;
-    outline: 3px solid var(--io-academy);
+    color: var(--grey-100);
+    outline: 2px solid var(--grey-100);
 }
 
 .portfolio .portfolio__line {
