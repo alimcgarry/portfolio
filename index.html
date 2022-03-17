@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali McGarry Portfolio</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9b98b550ee.js" crossorigin="anonymous"></script>
+    <script async src="script.js"></script>
+</head>
+<body>
+    <!-- Start of Navbar -->
+    <nav class="navbar">
+        <!-- Navbar links -->
+        <ul class="nav__list">
+            <li class="nav-link"><a href="#">home</a></li>
+            <li class="nav-link"><a href="#about">about</a></li>
+            <li class="nav-link"><a href="#portfolio">portfolio</a></li>
+            <li class="nav-link"><a href="#contact">contact</a></li>
+        </ul>
+
+        <div class="nav__hamburger">
+            <button class="hamburger hamburger-open"><img src="img/mobile-nav-open.svg"/></button>
+        </div>
+        <!-- End of navbar links -->
+        <div class="mobile-nav hidden">
+            <ul class="mobile__nav__list">
+                <button class="hamburger hamburger-close"><img src="img/mobile-nav-close.svg"/></button>
+                <li class="nav-link nav-link--mobile"><a href="#">home</a></li>
+                <li class="nav-link nav-link--mobile"><a href="#about">about</a></li>
+                <li class="nav-link nav-link--mobile"><a href="#portfolio">portfolio</a></li>
+                <li class="nav-link nav-link--mobile"><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+        <!-- Start of mobile nav -->
+    </nav>
+    <!-- End of navbar -->
+    
+
+    <!-- Start of hero section -->
+    <header class="hero">
+        <!-- Container for Hero Section -->
+        <div class="container">
+            <!-- Hero Section Content -->
+            <div class="hero__content">
+                <span class="hero__greeting">Hey there! 👋🏻 I'm...</span>
+                <!-- Div for gradient title -->
+                <div>
+                    <h1 class="hero__title">Ali McGarry</h1>
+                </div>
+                <p class="hero__subtitle">
+                    I'm a developer who's passionate about creating interactive applications and experiences on the web.
+                </p>
+                <button class="hero__btn btn btn--accent">
+                    Hire Me
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <ul class="hero__socials">
+                    <li class="hero__social-link"><a target="_blank" href="https://www.linkedin.com/in/alimcgarry/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li class="hero__social-link"><a target="_blank" href="https://github.com/doubt-ur-vibe"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="hero__social-link"><a href="mailto:ali.mcgarry@gmail.com"><i class="fa-solid fa-envelope"></i></i></a></li>
+                </ul>
+            </div>
+
+            <!-- End of hero section content -->
+        </div>
+        <!-- End of container -->
+    </header>
+    <!-- End of hero Section -->
+
+<main>
+    <!-- Start of about section -->
+    <section class="about" id="about">
+        <!-- Container for about section -->
+        <div class="container">
+            <!-- About section content -->
+            <div class="about__content">
+                <!-- About section header -->
+                <h2 class="about__title">About Me</h2>
+                <div class="about__line title__line"></div>
+                <!-- End of about section header -->
+                <div class="about__grid">
+                    <h4 class="about__subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus viverra dictum.
+                    </h4>
+                    <p class="about__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis, lorem vitae feugiat molestie, nisl ligula hendrerit risus, et malesuada eros sem ac arcu. Vestibulum pellentesque leo non condimentum viverra. Vivamus fringilla.<br/><br/>
+
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                    </p>
+                </div>
+            </div>
+            <!-- End of about section content -->
+        </div>
+        <!-- End of container -->
+    </section>
+    <!-- End of about section -->
+
+    <!-- Start of iO section -->
+    <section class="io">
+        <!-- Container for iO section -->
+        <div class="container">
+            <!-- iO section content -->
+            <div class="io__content">
+                <img class="io__logo" src="./img/iO Logo.png" alt="iO Academy Logo">
+                <div>
+                <h3 class="io__title">iO Academy</h3>
+                <p class="io__description">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                 </p>
+                <a href="./files/iO_Prospectus_2021.pdf" target="_blank"><button class="io__btn btn">View Prospectus</button></a>
+            </div>
+            <!-- End of iO section content -->
+        </div>
+        <!-- End of container -->
+    </section>
+    <!-- End of iO Section -->
+
+    <!-- Start of portfolio section -->
+    <section class="portfolio" id="portfolio">
+        <!-- Container for portfolio section -->
+        <div class="container">
+            <!-- Portfolio section content -->
+            <div class="portfolio__content">
+                <!-- Portfolio section header -->
+                <h2 class="portfolio__title">Portfolio</h2>
+                <div class="portfolio__line title__line"></div>
+                <!-- End of portfolio section header -->
+
+                    <!-- List of portfolio projects -->
+                    <ul class="portfolio__items">
+
+                        <!-- Project #1 -->
+                        <li class="portfolio__item">
+                            <div class="portfolio__img"></div>
+
+                            <div class="portfolio__item__content">
+                                <h2 class="portfolio__item__title">QR Code</h2>
+                                <div class="portfolio__technologies">
+                                    <span class="portfolio__technology tech--1">HTML</span>
+                                    <span class="portfolio__technology tech--2">CSS</span>
+                                </div>
+                                <p class="portfolio__description">
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                                </p>
+                                <button class="btn btn--primary">View QR Code</button>
+                            </div>
+                        </li>
+                        <!-- End of project #1 -->
+
+                        <!-- Project #2 -->
+                        <li class="portfolio__item portfolio__item--reverse">
+                            <div class="portfolio__img"></div>
+
+                            <div class="portfolio__item__content">
+                                <h2 class="portfolio__item__title">QR Code</h2>
+                                <div class="portfolio__technologies">
+                                    <span class="portfolio__technology tech--1">HTML</span>
+                                    <span class="portfolio__technology tech--2">CSS</span>
+                                </div>
+                                <p class="portfolio__description">
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                                </p>
+                                <button class="btn btn--accent">View QR Code</button>
+                            </div>
+                        </li>
+                        <!-- End of project #2 -->
+
+                        <!-- Project #3 -->
+                        <li class="portfolio__item">
+                            <div class="portfolio__img"></div>
+
+                            <div class="portfolio__item__content">
+                                <h2 class="portfolio__item__title">QR Code</h2>
+                                <div class="portfolio__technologies">
+                                    <span class="portfolio__technology tech--1">HTML</span>
+                                    <span class="portfolio__technology tech--2">CSS</span>
+                                </div>
+                                <p class="portfolio__description">
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                                </p>
+                                <a target="_blank" href="#">
+                                    <button class="btn btn--secondary">View QR Code</button>
+                                </a>
+                                    
+                            </div>
+                        </li>
+                        <!-- End of project #3 -->
+
+                    </ul>
+                    <!-- End of portfolio projects list -->
+            </div>
+            <!-- End of portfolio section content -->
+        </div>
+        <!-- End of container -->
+    </section>
+    <!-- End of portfolio section -->
+
+    <!-- Start of contact section -->
+    <section class="contact" id="contact">
+        <!-- Start of contact section container -->
+        <div class="container">
+            <!-- Start of contact section content -->
+            <div class="contact__content">
+
+                <!-- Contact section header -->
+                <h2 class="contact__title">Get in Touch</h2>
+                <div class="contact__line title__line"></div>
+                <!-- End of contact section header -->
+
+                <!-- Start of contact section grid -->
+                <div class="contact__grid">
+
+                    <!-- Contact section form -->
+                    <div class="contact__form">
+                        <h4 class="contact__subtitle">
+                            Leave me a message below and I will get back to you as soon as possible!
+                           </h4>
+                           <form action="" class="contact__form">
+                               <label class="contact__label">Name
+                                   <input class="contact__input" placeholder="Name" type="name" />
+                               </label>
+                               <label class="contact__label">Email
+                                   <input class="contact__input" placeholder="Email" type="email" />
+                               </label>
+                               <label class="contact__label">Message
+                                   <textarea class="contact__input" placeholder="Leave your message here..." name="" id="" cols="30" rows="10"></textarea>
+                               </label>
+                               <input value="Send Message" class="contact__btn btn btn--accent" type="submit">
+                           </form>
+                    </div>
+                    <!-- End of contact section form -->
+
+                    <!-- Personal information -->
+                    <div class="contact__personal-info">
+                        <ul class="contact__socials">
+                            <li class="contact__social-link"><a target="_blank" href="https://www.linkedin.com/in/alimcgarry/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li class="contact__social-link"><a target="_blank" href="https://github.com/doubt-ur-vibe"><i class="fa-brands fa-github"></i></a></li>
+                            <li class="contact__social-link"><a href="mailto:ali.mcgarry@gmail.com"><i class="fa-solid fa-envelope"></i></i></a></li>
+                        </ul>
+                        <span class="contact__location">
+                            <i class="contact__location-icon fa-solid fa-location-dot"></i>
+                            <p class="contact__location-text">Thame, Oxfordshire</p>
+                        </span>
+                     </div>
+                    <!-- End of personal information -->
+
+                </div>
+                <!-- End of contact section grid -->
+               </div>
+   
+            <!-- End of contact section content -->
+        </div>
+        <!-- End of container -->
+    </section>
+    <!-- End of contact section -->
+</main>
+</body>
+</html> 
