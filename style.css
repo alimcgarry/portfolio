@@ -184,6 +184,7 @@ input[type=submit] {
     border-radius: 50px;
     margin: 1.2rem 0 3.8rem 0 ;
 }
+
 .navbar {
     max-width: 128rem;
     width: 88%;
@@ -262,7 +263,10 @@ input[type=submit] {
 }
 
 .io .io__content {
-    background-color: #473853;
+    background: url(./img/iO_background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
     border-radius: 5rem;
     padding: 4.8rem 6.4rem;
     
@@ -284,6 +288,7 @@ input[type=submit] {
 .io .io__btn {
     background: var(--io-academy);
     color: var(--grey-100);
+    outline: 2px solid var(--grey-100);
 }
 
 .io .io__btn:hover {
@@ -304,7 +309,6 @@ input[type=submit] {
 .portfolio .portfolio__item {
     display: flex;
     gap: 2rem;
-
     background-color: var(--grey-700);
     border-radius: 5rem;
     overflow: hidden;
