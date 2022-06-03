@@ -7,7 +7,6 @@
     <title>Ali McGarry Portfolio</title>
     <script src="https://kit.fontawesome.com/9b98b550ee.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="hamburgerAnimation.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9b98b550ee.js" crossorigin="anonymous"></script>
     <script async src="script.js"></script>
@@ -254,21 +253,22 @@
                 <div class="contact__grid">
 
                     <!-- Contact section form -->
-                    <div class="contact__form">
+                    <div class="contact__container">
                         <h4 class="contact__subtitle">
-                            Leave me a message below and I'll get back to you as soon as possible!</h4>
-                           <form method="post" action="https://forms.un-static.com/forms/d596dbf9bf6d05d6d49616e4c436814eaeb8f9fd" class="contact__form">
-                               <label class="contact__label">Name
-                                   <input class="contact__input" placeholder="Name" type="name" maxlength="100" />
-                               </label>
-                               <label class="contact__label">Email
-                                   <input class="contact__input" placeholder="Email" type="email" />
-                               </label>
-                               <label class="contact__label">Message
-                                   <textarea class="contact__input" placeholder="Leave your message here..." name="" id="" cols="15" rows="10"></textarea>
-                               </label>
-                               <input value="Send Message" class="contact__btn btn btn--accent" id="submit" type="submit">
-                           </form>
+                            Leave me a message below and I'll get back to you as soon as possible!
+                        </h4>
+                        <form action="https://forms.un-static.com/forms/d596dbf9bf6d05d6d49616e4c436814eaeb8f9fd" method="post" class="contact__form">
+                            <label class="contact__label">Name
+                                <input class="contact__input" placeholder="Name" type="name" maxlength="100" />
+                            </label>
+                            <label class="contact__label">Email
+                                <input class="contact__input" placeholder="Email" type="email" />
+                            </label>
+                            <label class="contact__label">Message
+                                <textarea class="contact__input" placeholder="Leave your message here..." name="" id="" cols="15" rows="10"></textarea>
+                            </label>
+                            <input value="Send Message" class="contact__btn btn btn--accent" id="submit" type="submit">
+                        </form>
                     </div>
                     <!-- End of contact section form -->
 
