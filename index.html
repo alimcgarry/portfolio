@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali McGarry Portfolio</title>
+    <script src="https://kit.fontawesome.com/9b98b550ee.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="hamburgerAnimation.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9b98b550ee.js" crossorigin="anonymous"></script>
     <script async src="script.js"></script>
@@ -14,24 +16,27 @@
     <!-- Start of Navbar -->
     <nav class="navbar">
         <!-- Navbar links -->
-        <ul class="nav__list">
-            <li class="nav-link"><a href="#">home</a></li>
-            <li class="nav-link"><a href="#about">about</a></li>
-            <li class="nav-link"><a href="#portfolio">portfolio</a></li>
-            <li class="nav-link"><a href="#contact">contact</a></li>
+        <ul class="navbar__navList">
+            <li class="navbar__navLink"><a href="#">home</a></li>
+            <li class="navbar__navLink"><a href="#about">about</a></li>
+            <li class="navbar__navLink"><a href="#portfolio">portfolio</a></li>
+            <li class="navbar__navLink"><a href="#contact">contact</a></li>
         </ul>
 
-        <div class="nav__hamburger">
-            <button class="hamburger hamburger-open"><img src="img/mobile-nav-open.svg"/></button>
-        </div>
+        <button class="menu navbar__hamburger" aria-label="Main Menu">
+            <svg width="32" height="32" viewBox="0 0 100 100">
+              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
         <!-- End of navbar links -->
-        <div class="mobile-nav hidden">
-            <ul class="mobile__nav__list">
-                <button class="hamburger hamburger-close"><img src="img/mobile-nav-close.svg"/></button>
-                <li class="nav-link nav-link--mobile"><a href="#">home</a></li>
-                <li class="nav-link nav-link--mobile"><a href="#about">about</a></li>
-                <li class="nav-link nav-link--mobile"><a href="#portfolio">portfolio</a></li>
-                <li class="nav-link nav-link--mobile"><a href="#contact">contact</a></li>
+        <div class="navbar__mobileNav">
+            <ul class="navbar__mobileNavList">
+                <li class="navbar__navLink navbar__navLink--mobile"><a href="#">home</a></li>
+                <li class="navbar__navLink navbar__navLink--mobile"><a href="#about">about</a></li>
+                <li class="navbar__navLink navbar__navLink--mobile"><a href="#portfolio">portfolio</a></li>
+                <li class="navbar__navLink navbar__navLink--mobile"><a href="#contact">contact</a></li>
             </ul>
         </div>
         <!-- Start of mobile nav -->
@@ -61,10 +66,9 @@
                 <ul class="hero__socials">
                     <li class="hero__social-link"><a target="_blank" href="https://www.linkedin.com/in/alimcgarry/"><i class="fa-brands fa-linkedin-in"></i></a></li>
                     <li class="hero__social-link"><a target="_blank" href="https://github.com/doubt-ur-vibe"><i class="fa-brands fa-github"></i></a></li>
-                    <li class="hero__social-link"><a href="mailto:ali.mcgarry@gmail.com"><i class="fa-solid fa-envelope"></i></i></a></li>
+                    <li class="hero__social-link"><a href="mailto:ali.mcgarry@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
                 </ul>
             </div>
-
             <!-- End of hero section content -->
         </div>
         <!-- End of container -->
@@ -87,9 +91,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus viverra dictum.
                     </h4>
                     <p class="about__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis, lorem vitae feugiat molestie, nisl ligula hendrerit risus, et malesuada eros sem ac arcu. Vestibulum pellentesque leo non condimentum viverra. Vivamus fringilla.<br/><br/>
-
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                        I’m a full stack developer who got hooked on coding whilst trying to fix a bug on my Shopify store. A few online courses and a 16 week bootcamp later and here I am applying for my first developer job.<br><br>
+                        When I’m not coding you’ll find me either in the gym, getting choked out by someone whilst practicing MMA, or taking a hike in nature with my mates.
                     </p>
                 </div>
             </div>
@@ -109,7 +112,7 @@
                 <div>
                 <h3 class="io__title">iO Academy</h3>
                 <p class="io__description">
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                    I completed the full stack track bootcamp at iO academy. A 16 week bootcamp with an industry approved cirriculum which you can see below!
                  </p>
                 <a href="./files/iO_Prospectus_2021.pdf" target="_blank"><button class="io__btn btn">View Prospectus</button></a>
             </div>
@@ -135,60 +138,96 @@
 
                         <!-- Project #1 -->
                         <li class="portfolio__item">
-                            <div class="portfolio__img"></div>
+                            <div class="portfolio__img portfolio__img--pennyLane"></div>
 
                             <div class="portfolio__item__content">
-                                <h2 class="portfolio__item__title">QR Code</h2>
+                                <h3 class="portfolio__item__title">Property App</h3>
                                 <div class="portfolio__technologies">
-                                    <span class="portfolio__technology tech--1">HTML</span>
-                                    <span class="portfolio__technology tech--2">CSS</span>
+                                    <i class="portfolio__technology fa-brands fa-php"></i>
+                                    <i class="portfolio__technology fa-brands fa-bootstrap"></i>
+                                    <i class="portfolio__technology fa-brands fa-css3"></i>
+                                    <i class="portfolio__technology fa-brands fa-html5"></i>
                                 </div>
                                 <p class="portfolio__description">
-                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                                    As part of a scrum team, we built a website highlighting the properties for an estate agent. We were provided a RESTful API which we used to populate our MySQL database, we then used PHP and cURL to interact with and display the data.
                                 </p>
-                                <button class="btn btn--primary">View QR Code</button>
+                                <div class="portfolio__links">
+                                    <a href="https://dev.io-academy.uk/projects/2022-march/2022-mar-property-listing/" target="target"><button class="btn btn--accent">View Project</button></a>
+                                    <a href="https://github.com/iO-Academy/2022-mar-property-listing" target="blank"><i class="portfolio__githubLink fa-brands fa-github"></i></a>
+                                    </div>
                             </div>
                         </li>
                         <!-- End of project #1 -->
 
                         <!-- Project #2 -->
                         <li class="portfolio__item portfolio__item--reverse">
-                            <div class="portfolio__img"></div>
+                            <div class="portfolio__img portfolio__img--foodDelivery"></div>
 
                             <div class="portfolio__item__content">
-                                <h2 class="portfolio__item__title">QR Code</h2>
+                                <h3 class="portfolio__item__title">Food Delivery</h3>
                                 <div class="portfolio__technologies">
-                                    <span class="portfolio__technology tech--1">HTML</span>
-                                    <span class="portfolio__technology tech--2">CSS</span>
+                                    <i class="portfolio__technology fa-brands fa-react"></i>
+                                    <i class="portfolio__technology fa-brands fa-js"></i>
+                                    <i class="portfolio__technology fa-brands fa-css3"></i>
+                                    <i class="portfolio__technology fa-brands fa-html5"></i>
                                 </div>
                                 <p class="portfolio__description">
-                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                                    This React project included using fetch to collect menu data from a RESTful API. This data was used to allow customers to pick a restaurant and add menu items to their cart. Reacts' state functionality was used to ensure the customers cart data and menu data were consistent.
                                 </p>
-                                <button class="btn btn--accent">View QR Code</button>
+                                <div class="portfolio__links">
+                                    <a href="https://2022-beetles-food-app-fe.dev.io-academy.uk/" target="blank"><button class="btn btn--accent">View Project</button></a>
+                                    <a href="https://github.com/iO-Academy/2022-march-food-app-fe" target="blank"><i class="portfolio__githubLink fa-brands fa-github"></i></a>
+                                    </div>
                             </div>
                         </li>
                         <!-- End of project #2 -->
 
                         <!-- Project #3 -->
-                        <li class="portfolio__item">
-                            <div class="portfolio__img"></div>
+                        <li class="portfolio__item portfolio__item">
+                            <div class="portfolio__img portfolio__img--gopherGlory"></div>
 
                             <div class="portfolio__item__content">
-                                <h2 class="portfolio__item__title">QR Code</h2>
+                                <h3 class="portfolio__item__title">JavaScript Game</h3>
                                 <div class="portfolio__technologies">
-                                    <span class="portfolio__technology tech--1">HTML</span>
-                                    <span class="portfolio__technology tech--2">CSS</span>
+                                    <i class="portfolio__technology fa-brands fa-js"></i>
+                                    <i class="portfolio__technology fa-brands fa-css3"></i>
+                                    <i class="portfolio__technology fa-brands fa-html5"></i>
+                                    <i class="portfolio__technology fa-brands fa-figma"></i>
                                 </div>
                                 <p class="portfolio__description">
-                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas tincidunt felis sed diam tempus, ac vehicula ex cursus. Praesent consequat lacinia odio.
+                                    Gopher glory is a minesweeper-esque game made using vanilla JavaScript, HTML and CSS. It was built as part of a SCRUM team using AGILE methodologies. The game was designed using Figma.
                                 </p>
-                                <a target="_blank" href="#">
-                                    <button class="btn btn--secondary">View QR Code</button>
-                                </a>
-                                    
+                                <div class="portfolio__links">
+                                <a href="https://dev.io-academy.uk/projects/2022-march/2022-mar-gopher-glory/" target="blank"><button class="btn btn--accent">View Project</button></a>
+                                <a href="https://github.com/iO-Academy/2022-mar-gopher-glory" target="blank"><i class="portfolio__githubLink fa-brands fa-github"></i></a>
+                                </div>
                             </div>
                         </li>
                         <!-- End of project #3 -->
+
+                        <!-- Project #4 -->
+                        <li class="portfolio__item portfolio__item--reverse">
+                            <div class="portfolio__img portfolio__img--collection"></div>
+
+                            <div class="portfolio__item__content">
+                                <h3 class="portfolio__item__title">Card Collector</h3>
+                                <div class="portfolio__technologies">
+                                    <i class="portfolio__technology fa-brands fa-php"></i>
+                                    <i class="portfolio__technology fa-solid fa-database"></i>
+                                    <i class="portfolio__technology fa-brands fa-css3"></i>
+                                    <i class="portfolio__technology fa-brands fa-html5"></i>
+                                    <i class="portfolio__technology fa-brands fa-figma"></i>
+                                </div>
+                                <p class="portfolio__description">
+                                    This playing card collection app was built using PHP with a MySql database. Users have the ability to add new decks, delete old decks, or edit the existing decks from within the database.
+                                </p>
+                                <div class="portfolio__links">
+                                    <a href="https://2022-alim.dev.io-academy.uk/collection/index.php?sort=default" target="blank"><button class="btn btn--accent">View Project</button></a>
+                                <a href="https://github.com/doubt-ur-vibe/collection" target="blank"><i class="portfolio__githubLink fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End of project #4 -->
 
                     </ul>
                     <!-- End of portfolio projects list -->
@@ -217,19 +256,18 @@
                     <!-- Contact section form -->
                     <div class="contact__form">
                         <h4 class="contact__subtitle">
-                            Leave me a message below and I will get back to you as soon as possible!
-                           </h4>
+                            Leave me a message below and I'll get back to you as soon as possible!</h4>
                            <form action="" class="contact__form">
                                <label class="contact__label">Name
-                                   <input class="contact__input" placeholder="Name" type="name" />
+                                   <input class="contact__input" placeholder="Name" type="name" maxlength="100" />
                                </label>
                                <label class="contact__label">Email
                                    <input class="contact__input" placeholder="Email" type="email" />
                                </label>
                                <label class="contact__label">Message
-                                   <textarea class="contact__input" placeholder="Leave your message here..." name="" id="" cols="30" rows="10"></textarea>
+                                   <textarea class="contact__input" placeholder="Leave your message here..." name="" id="" cols="15" rows="10"></textarea>
                                </label>
-                               <input value="Send Message" class="contact__btn btn btn--accent" type="submit">
+                               <input value="Send Message" class="contact__btn btn btn--accent" id="submit" type="submit">
                            </form>
                     </div>
                     <!-- End of contact section form -->
