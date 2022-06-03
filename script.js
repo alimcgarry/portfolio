@@ -1,17 +1,31 @@
-'use strict'
+"use strict";
 
-const hamburgerBtnOpen = document.querySelector(".hamburger-open")
-const hamburgerBtnClose = document.querySelector(".hamburger-close")
-const mobileNav = document.querySelector(".mobile-nav")
-const mobileNavLinks = document.querySelectorAll(".nav-link--mobile")
+const hamburger = document.querySelector(".navbar__hamburger");
+const mobileNav = document.querySelector(".navbar__mobileNav");
+const mobileNavLinks = document.querySelectorAll(".navbar__navLink--mobile");
+const contactFormSubmit = document.querySelector("contact__btn");
 
-hamburgerBtnOpen.addEventListener('click', toggleMobileNav)
-hamburgerBtnClose.addEventListener('click', toggleMobileNav)
+hamburger.addEventListener("click", toggleMobileNav);
+
+hamburger.addEventListener("click", toggleMobileNav);
 
 mobileNavLinks.forEach((nav) => {
-    nav.addEventListener('click', toggleMobileNav)
-})
+  nav.addEventListener("click", toggleMobileNav);
+});
 
-function toggleMobileNav () {
-    mobileNav.classList.toggle('hidden')
+contactFormSubmit.addEventListener("submit", (e) => {
+  e.preventDefault();
+  handleContactFormSubmit();
+});
+
+function toggleMobileNav() {
+  mobileNav.classList.toggle("navbar__mobileNav--active");
+  hamburger.classList.toggle("opened");
+  hamburger.setAttribute("aria-expanded", this.classList.contains("opened"));
 }
+
+function handleContactFormSubmit() {
+  readContactFormData();
+}
+
+function readContactFormData() {}
