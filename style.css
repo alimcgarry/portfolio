@@ -316,6 +316,7 @@ body .navbar .hidden {
 
 .about .about__subtitle {
   margin-bottom: 1.8rem;
+  line-height: 1.6;
 }
 
 .io .io__content {
