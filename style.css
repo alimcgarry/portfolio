@@ -354,6 +354,10 @@ section {
   margin-bottom: 1.8rem;
 }
 
+.io {
+  padding-top: 0;
+}
+
 .io .io__content {
   background: url(./img/iO_background.jpeg);
   background-size: cover;
