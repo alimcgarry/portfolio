@@ -111,6 +111,10 @@ body .navbar .hidden {
   display: none;
 }
 
+section {
+  padding-top: 10rem;
+}
+
 .btn {
   padding: 1.4rem 2.8rem;
   border-radius: 100px;
@@ -173,7 +177,7 @@ body .navbar .hidden {
 }
 
 .navbar {
-  height: 12rem;
+  height: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,6 +187,7 @@ body .navbar .hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 2rem;
 }
 
 .navbar__content {
@@ -279,6 +284,7 @@ body .navbar .hidden {
 }
 
 .sticky .navbar {
+  margin-top: 0;
   position: fixed;
   background-color: rgba(20, 5, 31, 0.95);
   max-width: 100%;
@@ -346,6 +352,10 @@ body .navbar .hidden {
 
 .about .about__subtitle {
   margin-bottom: 1.8rem;
+}
+
+.io {
+  padding-top: 0;
 }
 
 .io .io__content {
