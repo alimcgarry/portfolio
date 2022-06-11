@@ -126,7 +126,7 @@ body .navbar .hidden {
 }
 
 section {
-  margin-top: 6rem;
+  padding-top: 10rem;
 }
 
 .btn {
@@ -191,10 +191,11 @@ section {
 }
 
 .navbar {
-  height: 12rem;
+  height: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .navbar__content {
@@ -275,6 +276,7 @@ section {
 }
 
 .sticky .navbar {
+  margin-top: 0;
   position: fixed;
   background-color: rgba(20, 5, 31, 0.95);
   max-width: 100%;
