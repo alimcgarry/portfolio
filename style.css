@@ -500,8 +500,8 @@ section {
 .contact .contact__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 7fr 3fr;
-      grid-template-columns: 7fr 3fr;
+  -ms-grid-columns: 7fr 4fr;
+      grid-template-columns: 7fr 4fr;
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
 }
@@ -593,6 +593,7 @@ section {
 
 .contact .contact__location-text {
   font-family: montserrat, sans-serif;
+  font-size: 1.7rem;
 }
 
 @media screen and (max-width: 920px) {
@@ -678,7 +679,7 @@ section {
     gap: 3.6rem;
   }
   .contact .contact__location-text {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .contact .contact__social-link {
     font-size: 2.8rem;
